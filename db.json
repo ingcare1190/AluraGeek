@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "15615b1c-1b71-44dd-b736-f479c5b77f16",
+      "name": "Espada",
+      "price": "100",
+      "image_url": "https://www.darkknightarmoury.com/wp-content/uploads/2019/10/MC-HK-1482DX-1.jpg"
+    },
+    {
+      "id": "0abb2596-a000-4424-9dc1-68074c128dc4",
+      "name": "Daga",
+      "price": "30",
+      "image_url": "https://www.darkknightarmoury.com/wp-content/uploads/2020/08/NP-HWT253BK.jpg"
+    },
+    {
+      "id": "6e90326d-e4da-4c3f-9126-dd22a5686403",
+      "name": "Arco",
+      "price": "50",
+      "image_url": "https://www.darkknightarmoury.com/wp-content/uploads/2019/10/MCI-3449.jpg"
+    },
+    {
+      "id": "e90ef05e-c711-4445-8a26-b901b6e15a38",
+      "name": "Ballesta",
+      "price": "80",
+      "image_url": "https://www.darkknightarmoury.com/wp-content/uploads/2019/10/ME-0010.jpg"
+    }
+  ]
+}

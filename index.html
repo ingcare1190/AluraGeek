@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="extras/favoritos.webp" />
+    <title>Alura Geek Challenge</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header_logo" src="extras/logo.png" alt="Logo aluraGeek" />
+      <div class="header_sombra"></div>
+    </header>
+
+    <main>
+      <section class="agregar">
+        <h1 class="titulo_agregar">Agregar<br />Producto:</h1>
+
+        <form class="contenedor_forma" data-form>
+          <fieldset class="entrada_forma">
+            <input
+              name="nombre"
+              class="espacio_forma"
+              type="text"
+              placeholder="nombre"
+              minlength="3"
+              required
+              data-name
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="entrada_forma">
+            <input
+              name="precio"
+              class="espacio_forma"
+              type="number"
+              placeholder="precio"
+              min="1"
+              required
+              data-price
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+          <fieldset class="entrada_forma">
+            <input
+              name="url_imagen"
+              class="espacio_forma"
+              type="url"
+              placeholder="URL de la imagen"
+              pattern="https?://.*\.(png|jpg|webp|jpeg)"
+              required
+              data-url
+            />
+            <span class="mensaje-error"></span>
+          </fieldset>
+
+          <div class="boton_contenedor">
+            <button class="boton boton_enviar" type="submit" disabled>Enviar</button>
+            <button class="boton boton_limpiar" type="button">Limpiar</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="productos">
+        <h2 class="titulo_productos">Productos</h2>
+
+        <div class="contenedor_productos" data-list></div>
+      </section>
+    </main>
+
+    <footer>
+      <footer>
+        <span>Copyright 2024, Carlos Ruiz</span>
+      </footer>
+    </footer>
+
+    <script src="./js/displayError.js" type="module"></script>
+    <script src="./js/showItems.js" type="module"></script>
+    <script src="./js/addItem.js" type="module"></script>
+    <script src="./js/deleteItem.js" type="module"></script>
+    <script src="./js/cleanInputs.js" type="module"></script>
+  </body>
+</html>
